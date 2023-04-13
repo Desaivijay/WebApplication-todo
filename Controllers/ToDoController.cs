@@ -4,12 +4,12 @@ using WebApplication2.Data;
 using WebApplication2.Models;
 
 namespace WebApplication2.Controllers
-{
-    public class ToDoController : Controller
+{   
+    public class todocontroller : Controller
     {
         private readonly ToDoDb _database;
 
-        public ToDoController(ToDoDb db)
+        public todocontroller(ToDoDb db)
         {
             _database = db;
         }
@@ -29,7 +29,7 @@ namespace WebApplication2.Controllers
         {
             if (newItem != null)
             {
-                var todo = new ToDoItem
+                var todo = new Todoitem
                 {
                     Name = newItem,
                     IsDone = false

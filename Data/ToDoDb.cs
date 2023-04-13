@@ -18,7 +18,7 @@ namespace WebApplication2.Data
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         => options.UseSqlite($"Data Source={DbPath}");
 
-        public DbSet<ToDoItem> ToDos { get; set; }
+        public DbSet<Todoitem> ToDos { get; set; }
 
     }
 }
